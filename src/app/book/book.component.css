@@ -1,0 +1,32 @@
+section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin: 20px;
+  width: 70%;
+  height: 500px;
+}
+
+mat-card-actions {
+  bottom: 0px;
+  position: absolute;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+}
+
+mat-card-actions button {
+  margin: 20px;
+}
+
+img {
+  width: 100%;
+  height: auto;
+}

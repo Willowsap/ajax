@@ -1,0 +1,13 @@
+<section>
+  <mat-card class="page">
+    <img [src]="book[currPage].image">
+    <h2 *ngFor="let line of book[currPage].text">
+      {{line}}
+    </h2>
+    <mat-card-actions>
+      <button mat-button (click)="prevPage()" *ngIf="currPage > 0"><</button>
+      <button mat-button *ngIf="currPage < book.length -1"></button>
+      <button mat-button (click)="nextPage()" *ngIf="currPage < book.length -1">></button>
+    </mat-card-actions>
+  </mat-card>
+</section>

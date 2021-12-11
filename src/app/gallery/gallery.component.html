@@ -1,0 +1,7 @@
+<section>
+  <div class="row" *ngFor="let row of counter(numRows); index as i">
+    <div class="image" *ngFor="let num of counter(numCols); index as j">
+      <img [src]="images[i * numCols + j]">
+    </div>
+  </div>
+</section>
